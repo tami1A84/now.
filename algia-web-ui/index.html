@@ -55,6 +55,44 @@
     </div>
 </div>
 
-</body>
+<div id="postModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('post')">&times;</span>
+        <h2>新しい投稿</h2>
+        <textarea id="postContent" placeholder="今、なにしてる？ (Nostrに投稿されます)" maxlength="280"></textarea>
+        <button id="submitPostButton">投稿する</button>
+        <p class="post-status" id="postStatusMessage"></p>
+    </div>
+</div>
+
+<div id="replyModal" class="modal">
+    </div>
+
+<div id="zapModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('zap')">&times;</span>
+        <h2>Zap (投げ銭)</h2>
+        <p class="zap-target-info" id="zapTargetInfo"></p>
+        
+        <label for="zapAmountSats">Zap金額 (Sats):</label>
+        <input type="number" id="zapAmountSats" value="21" min="1" step="1" required>
+        
+        <label for="zapComment">コメント (オプション):</label>
+        <textarea id="zapComment" placeholder="Zapにコメントを追加できます" maxlength="100"></textarea>
+        
+        <button id="submitZapButton">Zapを送信する</button>
+        <p class="post-status" id="zapStatusMessage"></p>
+        
+        <input type="hidden" id="hiddenZapToId">
+        <input type="hidden" id="hiddenZapToPubkey">
+        <input type="hidden" id="hiddenZapTargetUsername">
+    </div>
+</div>
+
 <script src="timeline.js"></script>
+
+</body>
 </html>
+
+
+
