@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostr Client UI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="iphone-x">
+    <div class="notch">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+    </div>
+    <div class="top-bar">
+        <div class="time">20:25</div>
+        <div class="status-icons">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+    </div>
+    <div class="screen">
+        <header class="app-header">
+            <!-- Back arrow removed as it was not requested -->
+            <h1 class="title">タイムライン</h1>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </header>
+
+        <main class="timeline-feed">
+            </main>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span class="nav-text">ホーム</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-comment"></i>
+                <span class="nav-text">トーク</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-clock"></i>
+                <span class="nav-text">タイムライン</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span class="nav-text">ウォレット</span>
+                 <div class="notification-dot"></div>
+            </a>
+        </nav>
+    </div>
+</div>
+
+</body>
+<script src="timeline.js"></script>
+</html>
